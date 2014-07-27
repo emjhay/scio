@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bar"
+    android:orientation="horizontal" >
+
+    <!--
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" 
+        android:layout_weight="0.05">
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp" >
+
+        <!--
+             <Button
+            android:id="@+id/backBtnID"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Back"
+            android:background="@drawable/btn_bg"
+            style="@style/white_text"
+            android:visibility="gone" />
+        -->
+
+        <ImageView
+            android:id="@+id/backBtnID"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/blank"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_back"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/titleHeaderTextID"
+            style="@style/white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_bar_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <!--
+             <Button
+            android:id="@+id/editOrUpdateID"
+            style="@style/white_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/btn_bg"
+            android:textSize="@dimen/textsize_name_list"
+            android:visibility="gone" />
+        -->
+
+        <ImageView
+            android:id="@+id/editOrUpdateID"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/blank"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_edit"
+            android:visibility="gone" />
+    </LinearLayout>
+    <!-- </LinearLayout> -->
+
+
+    <!--
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:background="@color/white_orange"
+        android:orientation="vertical" >
+    </LinearLayout>
+    -->
+
+</LinearLayout>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layoutSecondLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.1"
+            android:background="@drawable/bg_round"
+            android:orientation="vertical"
+            android:padding="1dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_top_round"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/blue_gray_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location Point Logs Interval"
+                    android:textSize="@dimen/textsize_name_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_mid_round"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio0"
+                        style="@style/black_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="2h"
+                        android:textSize="@dimen/textsize_name_list" />
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        style="@style/black_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4h"
+                        android:textSize="@dimen/textsize_name_list" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        style="@style/black_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6h"
+                        android:textSize="@dimen/textsize_name_list" />
+
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        style="@style/black_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8h"
+                        android:textSize="@dimen/textsize_name_list" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_mid_round"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/activateLocationID"
+                    style="@style/black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Activate"
+                    android:textSize="@dimen/textsize_name_list" />
+
+                <CheckBox
+                    android:id="@+id/deactivateLocationID"
+                    style="@style/black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Deactivate"
+                    android:textSize="@dimen/textsize_name_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/bg_mid_round"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_mid_round"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/blue_gray_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SMS Logs Interval"
+                    android:textSize="@dimen/textsize_name_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_mid_round"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio0"
+                        style="@style/black_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="2h"
+                        android:textSize="@dimen/textsize_name_list" />
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        style="@style/black_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4h"
+                        android:textSize="@dimen/textsize_name_list" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        style="@style/black_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6h"
+                        android:textSize="@dimen/textsize_name_list" />
+
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        style="@style/black_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8h"
+                        android:textSize="@dimen/textsize_name_list" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_mid_round"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/activateSmsID"
+                    style="@style/black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Activate"
+                    android:textSize="@dimen/textsize_name_list" />
+
+                <CheckBox
+                    android:id="@+id/deactivateSmsID"
+                    style="@style/black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Deactivate"
+                    android:textSize="@dimen/textsize_name_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/bg_mid_round"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_mid_round"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/blue_gray_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call Logs Interval"
+                    android:textSize="@dimen/textsize_name_list" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_mid_round"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/radioGroup3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio0"
+                        style="@style/black_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="2h"
+                        android:textSize="@dimen/textsize_name_list" />
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        style="@style/black_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4h"
+                        android:textSize="@dimen/textsize_name_list" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        style="@style/black_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6h"
+                        android:textSize="@dimen/textsize_name_list" />
+
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        style="@style/black_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8h"
+                        android:textSize="@dimen/textsize_name_list" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_bottom_round"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/activateCallID"
+                    style="@style/black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Activate"
+                    android:textSize="@dimen/textsize_name_list" />
+
+                <CheckBox
+                    android:id="@+id/deactivateCallID"
+                    style="@style/black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Deactivate"
+                    android:textSize="@dimen/textsize_name_list" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
